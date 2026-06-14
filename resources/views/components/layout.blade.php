@@ -16,12 +16,14 @@
 
 
     <style>
+
+        /* STILE DEL TESTO */
         h1,
         .h1 {
             font-family: "Orbitron", sans-serif;
         }
 
-
+/* STILE DI PAGINA */
 
         body {
 
@@ -37,6 +39,8 @@
             min-height: 100vh;
         }
 
+
+        /* CARD STILIZZATE */
         .custom-card {
             border-radius: 15px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -45,14 +49,14 @@
 
         .custom-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(191, 20, 20, 0.76);
         }
 
         .card-img-custom {
             height: 200px;
-            /* Altezza fissa */
+            /* Altezza */
             object-fit: cover;
-            /* Mantiene proporzioni senza deformare */
+            /* Mantiene proporzioni */
         }
 
 
@@ -75,6 +79,13 @@
         }
 
 
+
+        /* MEDIA QUERY */
+@media (max-width: 576px){
+    .custom-card{
+        font-size: 14px;
+    }
+}
 
 
 

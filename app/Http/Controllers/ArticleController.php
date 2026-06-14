@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
+
 class ArticleController extends Controller
 {
-  public $seasons = [
+
+
+  public $stagioni = [
     ['id' => 0,
     'name' => 'Primavera',
     'content' => 'Stagione che ad inizio anno si cataloga come prima',
@@ -42,7 +46,7 @@ class ArticleController extends Controller
         ];
 
 
-    //Blog con tutte le mie stagioni ed i loro dati;
+    //
     public function home(){
         return view('homepage');
     }
@@ -50,7 +54,7 @@ class ArticleController extends Controller
     public function indice(){
        
         return view('details.paginaIndice', [
-            'stagioni'=> $this->seasons
+            'stagioni'=> $this->stagioni
         ]);
     }
 
@@ -58,7 +62,7 @@ class ArticleController extends Controller
     public function details($id)
     {
         return view('details.paginaDetails', [
-            'stagione' => $this->seasons[$id]
+            'stagione' => $this->stagioni[$id]
         ]);
     }
 
