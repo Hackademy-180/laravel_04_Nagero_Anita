@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
+// i controller raggruppano ad una singola classe
+// delegano la logica, gestione delle richieste 
 
-class ArticleController extends Controller
+// 
+
+class ArticlesController extends Controller
 {
 
-
+// ARRAY Articolo- CARD
   public $stagioni = [
     ['id' => 0,
     'name' => 'Primavera',
@@ -45,11 +49,8 @@ class ArticleController extends Controller
 
         ];
 
-
-    //
-    public function home(){
-        return view('homepage');
-    }
+// GESSCE QUESTO CONTROLLER DEDITO SOLO FUNZIONI ANCHE PER IL RITORNO A VIEW
+// Function x obj e return che restituisce view
 
     public function indice(){
        
@@ -65,7 +66,9 @@ class ArticleController extends Controller
             'stagione' => $this->stagioni[$id]
         ]);
     }
-
+ 
+    
 }
 
 //   DENTRO AL CONTROLLER CLASSI, PROPRIETà E METODI.
+// 

@@ -1,9 +1,100 @@
-@import 'tailwindcss';
+ /* STILE DEL TESTO */
+        h1,
+        .h1 {
+            font-family: "Orbitron", sans-serif;
+        }
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
+        /* STILE DI PAGINA */
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+        body {
+
+            opacity: 89%;
+
+            display: flex;
+            flex-direction: column;
+            background-image: url(/media/season.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+
+        /* CARD STILIZZATE */
+        .custom-card {
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(191, 20, 20, 0.76);
+        }
+
+        .card-img-custom {
+            height: 150px;
+            /* Altezza */
+            width: 100%;
+            object-fit: cover;
+            /* Mantiene proporzioni */
+        }
+
+
+
+
+
+        main {
+            flex: 1;
+            /* Il contenuto centrale si espande riempiendo lo spazio */
+        }
+
+
+        html,
+        body {
+
+            cursor: pointer;
+            height: 100%;
+            /* Obbligatorio per far vedere lo sfondo a tutto schermo */
+            margin: 0;
+        }
+
+
+
+        /* MEDIA QUERY */
+        @media (max-width: 576px) {
+            .custom-card {
+                font-size: 14px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* FOOTER */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            border-top: 3px solid gray;
+            background-color: black;
+            color: yellowgreen;
+
+
+        }
