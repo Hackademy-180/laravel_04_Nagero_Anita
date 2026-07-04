@@ -1,23 +1,22 @@
 @props(['immagine', 'name', 'content'])
 
 
-        <div class="col-md-3">
-            <div class="card custom-card h-100 shadow-sm mx-auto">
+            <div class="card custom-card h-100 shadow-sm mx-auto" style="width: 18rem;">
                 <img src="{{ $immagine }}"  alt="{{ $name }}" style="height: 150px; object-fit: cover; width: 100%;">
 
-                <div class="card-body">
-                    <h5>
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="card-title fw-bold ">
                         {{ $name }}
                     </h5>
 
-                    <p >
+                    <p class="card-text text-muted">
                         {{ $content }}
                     </p>
 
                     {{ $slot }}
                 </div>
             </div>
-        </div>
+       
    
 
         {{-- ximg -- class="card-img-top card-img-custom"    --}}

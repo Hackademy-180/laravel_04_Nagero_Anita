@@ -9,6 +9,7 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
 
+<div class="col-md-3">
             <x-card
 
             
@@ -24,6 +25,6 @@
 
         </div>
     </div>
-
+</div>
 
 </x-layout>
