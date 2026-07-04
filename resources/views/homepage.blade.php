@@ -1,13 +1,6 @@
 <x-layout>
 
-
-
-
-
-
-
-
-
+{{-- header pagina iniziale home --}}
 
 
     <div class="container text-center mt-5">
@@ -18,13 +11,6 @@
 
         
     </div>
-
-
-
-
-
-
-
 
 
 </x-layout>
